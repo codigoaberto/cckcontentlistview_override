@@ -85,7 +85,7 @@ $assoc		= JLanguageAssociations::isEnabled();
 							<?php echo JHtml::_('searchtools.sort', 'JGLOBAL_TITLE', 'a.title', $listDirn, $listOrder); ?>
 						</th>
 						<th width="10%" class="nowrap hidden-phone">
-							<?php echo JHtml::_('searchtools.sort',  'Content Type', 'k.cck', $listDirn, $listOrder); ?>
+							<?php echo JHtml::_('searchtools.sort',  'COM_CCK_CONTENT_TYPE', 'k.cck', $listDirn, $listOrder); ?>
 						</th>
 						<th width="10%" class="nowrap hidden-phone">
 							<?php echo JHtml::_('searchtools.sort',  'JGRID_HEADING_ACCESS', 'a.access', $listDirn, $listOrder); ?>
@@ -184,7 +184,7 @@ $assoc		= JLanguageAssociations::isEnabled();
 							</div>
 						</td>
 						<td class="small hidden-phone">
-							<?php echo $this->escape($item->content_type); ?>
+							<?php echo $item->type_title; ?>
 						</td>
 						<td class="small hidden-phone">
 							<?php echo $this->escape($item->access_level); ?>
