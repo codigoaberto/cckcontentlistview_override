@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="3.0" type="plugin" group="system" method="upgrade">
+	<name>SEBLOD - CONTENT LIST VIEW OVERRIDE</name>
+	<description>SEBLOD - CONTENT LIST VIEW OVERRIDE</description>
+	<version>1.0.0</version>
+	<creationDate>February 2014</creationDate>
+	<author>Codigo Aberto (Marcio Marques)</author>
+	<authorEmail>marcio.marques@codigoaberto.pt</authorEmail>
+	<authorUrl>http://www.codigoaberto.pt</authorUrl>
+	<copyright>Copyright © 2014 Codigo Aberto All Rights Reserved</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<files>
+		<filename plugin="cckcontentlist">cckcontentlist.php</filename>
+		<filename>index.html</filename>
+		<filename>view.html.php</filename>
+		<folder>tmpl</folder>
+		<folder>views</folder>
+	</files>
+	<config>
+	</config>
+</extension>
