@@ -202,6 +202,8 @@ class ContentModelArticles extends JModelList
 		$query->select('k.cck AS content_type')
 			->join('LEFT', '#__cck_store_item_content AS k ON k.id = a.id');
 			
+		$query->select('t.title AS type_title')
+			->join('LEFT', '#__cck_core_types AS t ON t.name = k.cck');
 		// Join over the users for the author.
 		$query->select('ua.name AS author_name')
 			->join('LEFT', '#__users AS ua ON ua.id = a.created_by');
